@@ -1,0 +1,12 @@
+<div class="filter-section">
+            <div class="filter-list" id="category-filter">
+                <h4>Categories</h4>
+                <div class="checkbox-group">
+                    {% for category in categories %}<div class="checkbox-item">
+                        <input type="checkbox" name="category" id="category_{{ category.id }}" value="{{ category.id }}">
+                        <label for="category_{{ category.id }}" id="label_{{ category.id }}">{{ category.name }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>

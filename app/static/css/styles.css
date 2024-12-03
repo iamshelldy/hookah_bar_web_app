@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    grid-row: 1;
+}
+
+.header-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.some-class h1 {
+    margin: 0;
+}
+
+.header-links {
+    display: flex;
+    gap: 10px;
+}
+
+.header-links * {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #333;
+    border-width: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-links *:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.header-icons img {
+    height: 30px;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    grid-row: 2;
+}
+
+.filters {
+    min-width: 15vw;
+    max-width: 33vw;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+}
+
+.filters h4 {
+    margin: 5px;
+}
+
+.filters button {
+    background: #ccc;
+    width: 90%;
+    height: 5vh;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    grid-row: 3;
+}
+
+.checkbox-group {
+    max-height: 20vh;
+    overflow-y: auto;
+}
+
+.checkbox-item label {
+    cursor: pointer;
+}
+
+.checkbox-item label:hover {
+    color: red;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 10px;
+    justify-items: left;
+}
+
+.list-item {
+    border: 1px #ccc solid;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.list-item img {
+    height: 200px;
+    width: 200px;
+}
+
+.list-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.list-item a:hover {
+    color: red;
+}

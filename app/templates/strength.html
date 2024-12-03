@@ -1,0 +1,12 @@
+<div class="filter-section">
+            <div class="filter-list" id="strength-filter">
+                <h4>Strength</h4>
+                <div class="checkbox-group">
+                    {% for item in strength %}<div class="checkbox-item">
+                        <input type="checkbox" name="strength" id="strength_{{ item }}" value="{{ item }}">
+                        <label for="strength_{{ item }}">{{ item }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>

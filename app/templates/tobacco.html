@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <aside class="filters">
+        {% include 'brands.html' %}
+        {% include 'categories.html' %}
+        {% include 'flavours.html' %}
+        {% include 'strength.html' %}
+        <button type="button" id="search-btn">Search</button>
+    </aside>
+    <main class="content">
+        <h2>Tobacco List</h2>
+        <div class="list">
+             {% for item in tobacco %}<div class="list-item">
+                 <a href="/api/tobacco/{{ item.id }}">
+                     <img src="/static/images/tobacco/{{ item.id }}.png">
+                     <div>{{ brands[item.brand_id - 1].name }}</div>
+                     <div>{{ item.name }}</div>
+                 </a>
+             </div>
+             {% endfor %}
+        </div>
+    </main>
+</div>
+<script src="/static/js/script.js"></script>
+{% endblock %}
